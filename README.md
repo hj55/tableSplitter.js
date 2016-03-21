@@ -1,5 +1,5 @@
 #tableSplitter.js
-tableSplitter.js is a simple Javascript tool that let you split html tables in many different tables when viewport width goes below a certain breakpoint that the user can set. Very useful for optimal visualization on mobile devices.
+tableSplitter.js is a simple Javascript tool that let you split html tables in many different tables when viewport width goes below a certain breakpoint set by the user. Very useful for optimal visualization on mobile devices.
 It works on many tables within the same html page, also.
 It depends on the jQuery library.
 
