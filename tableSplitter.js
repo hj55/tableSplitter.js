@@ -1,11 +1,17 @@
 function tableSplitter (options) {
 
-    this.options = options ||  { //default options
+    this.options = { //default options
       sourceId:'my-table',
       targetId:'table-splitter',
       isMatrix:false,
-      breakPoint:320
+      breakPoint:480
     };
+
+    if (options) {
+      for (key in options) {
+        this.options[key] = options[key];
+      }
+    }
 
     this.build = function () {
 
@@ -45,7 +51,7 @@ function tableSplitter (options) {
         jQuery(source).find('tr').each (function() {
 
           if (index) {
-            var tr = $(this).clone();
+            var tr = jQuery(this).clone();
             jQuery(tr).empty();
             table.append(tr);
 
