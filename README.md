@@ -18,6 +18,6 @@ var options = {
 
 No option is mandatory.
 
-Then store a new instance of tableSplitter in a variable and call the method "build()".
+Then store a new instance of tableSplitter in a variable and you're done!
 
 var myVar = new tableSplitter(options);
